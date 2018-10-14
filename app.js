@@ -9,7 +9,7 @@ var app=express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/studentDetails',moviesRouter);
+app.use('/movies',moviesRouter);
 
 var port=process.env.PORT || (4000);
 
