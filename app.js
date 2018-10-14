@@ -9,9 +9,9 @@ var app=express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/movies',moviesRouter);
+app.use('/studentDetails',moviesRouter);
 
-var port=process.env.PORT || 4000;
+var port=process.env.PORT || (4000);
 
 app.listen(port, () => console.log("Running on localhost:4000"));
 
