@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/movies',moviesRouter);
 
-app.listen(3000,function(){
-    console.log('server is running on port 3000');
-});
+var port=process.env.PORT || (4000);
+
+app.listen(port, () => console.log("Running on localhost:4000"));
 
